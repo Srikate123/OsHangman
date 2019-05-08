@@ -1,0 +1,5 @@
+FROM openjdk:8
+COPY Client.java /
+WORKDIR /
+RUN javac *.java
+CMD ["java", "Client"]

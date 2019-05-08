@@ -1,0 +1,5 @@
+FROM openjdk:8
+COPY Server.java MultiThreadRespond.java /
+WORKDIR /
+RUN javac *.java
+CMD ["java", "Server"]
